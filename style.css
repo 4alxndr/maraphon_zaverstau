@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    padding: 0; 
+    font-size: 18px;
+    line-height: 30px;
+    font-family: Montserrat, sans-serif;
+    color: #533738;
+    background-color: #E5E5E5;
+}
+
+.main-nav {
+    list-style: none;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.main-nav a {
+    color: #533738;
+    text-decoration: none;    
+}
+
+.main-nav a:hover {
+    text-decoration: underline;
+}
+
+.main-nav a:active {
+    color: white;
+}
+
+.btn {
+    color: #533738;    
+    background: #CC8B86;
+    padding: 25px;
+    padding-left: 65px;
+    padding-right: 65px;
+    text-decoration: none;    
+}
+
+.promo h1 {
+    /* /Заголовок1 */
+    font-family: Montserrat, sans-serif;;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 62px;
+}
+
+.section-title {
+    /* /Заголовок2 */
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 50px;
+    /* identical to box height, or 125% */
+    text-transform: uppercase;
+    text-align: center;
+}
