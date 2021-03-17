@@ -2,7 +2,12 @@
 	"folders": [
 		{
 			"path": ".."
+		},
+		{
+			"path": "../../сайт-практика Великий Кексби/keksby-8-part-outlines"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Марафон Заверстаю"
+	}
 }

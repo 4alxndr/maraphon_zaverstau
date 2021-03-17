@@ -1,32 +1,65 @@
 body {
-    margin: 0;
+    margin: 0 auto;
     padding: 0; 
     font-size: 18px;
     line-height: 30px;
     font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: normal;
     color: #533738;
     background-color: #E5E5E5;
+    max-width: 1400px;    
 }
 
-.main-nav {
+.page-header {
+    background: url("img/anastasiya-vysotskaya-v5GfetB7Yv0-unsplash 1.jpg") no-repeat center;
+    background-size: cover;
+    min-height: 715px;
+}
+
+
+.header-menu {
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    /*background-color: red;*/
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+}
+
+.main-nav-menu {
     list-style: none;
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
-    line-height: 20px;
+    line-height: 20px;    
+    display: flex;
+    justify-content: space-between;
+    margin: 25px;
+    /*background-color: red;*/    
 }
 
-.main-nav a {
+.main-nav-menu li {
+    padding: 10px;
+   /* background-color: red;*/    
+}
+
+.header-menu a {
     color: #533738;
     text-decoration: none;    
 }
 
-.main-nav a:hover {
+.header-menu a:hover {
     text-decoration: underline;
 }
 
-.main-nav a:active {
+.header-menu a:active {
     color: white;
 }
 
@@ -39,13 +72,46 @@ body {
     text-decoration: none;    
 }
 
-.promo h1 {
+.promo {
+    margin: 90px 0 165px 182px;
+    width: 535px;
+    padding: 0px;
+}
+
+.promo-description {
+    width: 420px;
+    margin-bottom: 40px;
+}
+
+ h1 {
     /* /Заголовок1 */
     font-family: Montserrat, sans-serif;;
     font-style: normal;
     font-weight: normal;
     font-size: 50px;
     line-height: 62px;
+    margin: 0px;    
+}
+
+.about-us-container {
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start;
+    margin-bottom: 21px;
+    /* background-color: red;*/  
+}
+
+.about-us-description {
+    width: 525px;
+    min-width: 445px;
+    margin: 0px 0px 0px 62px;
+    padding: 0px;
+    /*background-color: red;*/
+}
+
+.about-us-description p {
+    margin: 0px;
+    /*background-color: red;*/
 }
 
 .section-title {
@@ -57,5 +123,273 @@ body {
     line-height: 50px;
     /* identical to box height, or 125% */
     text-transform: uppercase;
+    text-align: center;    
+    /* background-color: red; */
+    padding: 0px;
+    margin: 65px 0px 40px 0px;
+}
+
+.numbers-section {
+    display: flex;
+    background-color: #8D7370;
+    color: white;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    /* identical to box height */
+    text-transform: uppercase;
+    justify-content: space-around;
+    align-items: center;
+    height: 273px;
+}
+
+.numbers-box {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*background-color: red;*/
+}
+
+.portfolio {
+    padding-bottom: 65px;
+}
+
+.gallery {
+    width: 1200px;
+    margin: 0 auto;
+    /* background-color: red; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.portfolio .section-title {
+    text-align: left;
+    margin-left: 100px;
+}
+
+.project {    
+    /* background-color: red; */
+    margin-bottom: 25px;
+    padding: 0px;  
+}
+
+.look-arrow {    
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    /* identical to box height */
+    text-decoration: none;  
+    color: #533738;
+    margin-right: 10px;
+}
+
+.arrow {
+    display: flex;
+    justify-content: center;    
+}
+
+.our-team {
+    background: #E2C4BA;
+    padding: 1px 0 80px;
+    margin: 0;
+    /*background-color: red;*/
+}
+
+.team-gallery {
+    width: 1032px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    /*background-color: red;*/
+    
+}
+
+.person {
+    width: 320px;    
+    padding: 0px;    
+    /* background-color: red; */
+}
+
+.person p {
+    margin: 0px;       
+    /* background-color: red; */
+}
+
+.procedure {
+    width: 1200px;
+    display: flex;  
+    flex-wrap: wrap;
+    /* background-color: red; */
+    margin: auto; 
+    justify-content: space-between;
+   
+}
+
+.procedure-item {
+    display: flex;
+    width: 285px;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: red; */        
+}
+
+.procedure-item p {
     text-align: center;
+}
+
+.procedure-item-number {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 30px;
+    /* identical to box height, or 100% */
+    color: #FFFFFF;
+    background: #8D7370;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 35px;
+}
+
+.our-team .section-title {
+    margin-top: 50px;
+}
+
+.our-team .section-title-2 {
+    margin-top: 35px;
+    /* background-color: red; */
+}
+
+.reviews {
+    padding-bottom: 65px;
+}
+
+.reviews-slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reviews-gallery {
+    width: 834px;
+    display: flex;
+    margin: 0 30px;
+}
+
+.reviews-slider-arrows {
+    background: #CC8B86;
+    width: 72px;
+    height: 72px;
+    border-radius: 72px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reviews-gallery-photo {
+    margin: 0px;
+    padding: 0px;
+}
+
+.reviews-gallery-photo-img {
+    margin: 0px;
+    margin-bottom: 20px;
+}
+
+.reviews-slider-description {
+    margin: auto;
+    margin-right: 20px;   
+}
+
+.reviews-slider-description .autor {
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+.request {
+    background: #8D7370;
+    color: #FFFFFF;
+    margin: 0px;
+    padding: 0px;
+    /*background-color: red; */
+}
+
+.request-container {
+    display: flex;
+    width: 1117px;    
+    margin: auto;
+    justify-content: space-between;
+}
+
+.request-forms {
+    width: 507px;
+    text-align: left;    
+}
+
+.request .section-title {
+    text-align: left;
+    margin: 50px 0 0 0;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;   
+}
+
+.input-name, .input-tel {
+    background: #8D7370;
+    border: none;
+    border-bottom: 1px solid #FFFFFF; 
+    /* Основной текст */
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    color: #F6EDE9;
+    margin-bottom: 35px;
+}
+
+.request .btn {
+    width: 310px;   
+    text-decoration: none;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;  
+}
+
+
+.page-footer {
+    /* display: flex; */
+    width: 1200px;
+    margin: auto;
+}
+
+.footer-menu {    
+    margin: 37px 20px;
+    /*background-color: red; */
+}
+
+.footer-tel {
+    float: left;
+}
+
+.footer-adress {
+    float: left;
+}
+
+.footer-comp {
+    float: right;
 }
