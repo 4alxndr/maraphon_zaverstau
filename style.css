@@ -1,5 +1,5 @@
 body {
-    margin: 0 auto;
+    margin: 0;
     padding: 0; 
     font-size: 18px;
     line-height: 30px;
@@ -14,14 +14,16 @@ body {
 img {display: block;}
 
 .container-1200 {
-    width: 1200px;
+    max-width: 1200px;
     margin: auto;
+    padding: 0 20px;
     /*background-color: blue;*/
 }
 
 .container-1040 {
     max-width: 1040px;
     margin: auto;
+    padding: 0 20px;
     /*background-color: blue;*/
 }
 
@@ -37,6 +39,7 @@ img {display: block;}
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     margin: auto;
     /*background-color: red;*/
 }
@@ -54,13 +57,13 @@ img {display: block;}
     font-size: 16px;
     line-height: 20px;    
     display: flex;
-    justify-content: space-between;
+    justify-content: left;
     margin: 25px;
     /*background-color: red;*/    
 }
 
 .main-nav-menu li {
-    padding: 10px;
+    padding: 10px;   
    /* background-color: red;*/    
 }
 
@@ -117,10 +120,10 @@ img {display: block;}
 }
 
 .about-us-description {
-    width: 525px;
+    /*width: 525px;*/
     min-width: 445px;
     margin: 0px 0px 0px 62px;
-    padding: 0px;
+   
     /*background-color: red;*/
 }
 
@@ -140,8 +143,8 @@ img {display: block;}
     text-transform: uppercase;
     text-align: center;    
     /* background-color: red; */
-    padding: 0px;
-    margin: 65px 0px 40px 0px;
+    padding: 65px 0px 40px 0px;
+    margin: 0px;
 }
 
 .numbers-section {
@@ -266,14 +269,14 @@ img {display: block;}
 
 .our-team {
     background: #E2C4BA;
-    padding: 1px 0 80px;
+    padding: 0px 0 80px;
     margin: 0;
     /*background-color: red;*/
 }
 
-.team-gallery {
-    width: 1032px;
+.team-gallery {    
     display: flex;
+    flex-wrap: wrap;
     margin: 0 auto;
     justify-content: space-between;
     /*background-color: red;*/
@@ -292,7 +295,6 @@ img {display: block;}
 }
 
 .procedure {
-    width: 1200px;
     display: flex;  
     flex-wrap: wrap;
     /* background-color: red; */
@@ -331,16 +333,17 @@ img {display: block;}
 }
 
 .our-team .section-title {
-    margin-top: 50px;
+    padding-top: 50px;
 }
 
 .our-team .section-title-2 {
-    margin-top: 35px;
+    padding-top: 35px;
     /* background-color: red; */
 }
 
 .reviews {
     padding-bottom: 65px;
+     /* background-color: red; */
 }
 
 .reviews-slider {
@@ -364,8 +367,6 @@ img {display: block;}
     justify-content: center;
     align-items: center;
 }
-
-
 
 .reviews-gallery-photo {
     margin: 0px;
@@ -409,7 +410,7 @@ img {display: block;}
 
 .request .section-title {
     text-align: left;
-    margin: 50px 0 0 0;
+    padding: 50px 0 0 0;
 }
 
 .inputs {
