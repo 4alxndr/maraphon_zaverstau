@@ -290,7 +290,8 @@ img {display: block;}
 }
 
 .person p {
-    margin: 0px;       
+    margin: 0px;
+    padding-top: 10px;       
     /* background-color: red; */
 }
 
