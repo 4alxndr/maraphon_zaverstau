@@ -8,18 +8,32 @@ body {
     font-weight: normal;
     color: #533738;
     background-color: #E5E5E5;
-    max-width: 1400px;    
+    /*max-width: 1400px;    */
 }
+
+img {display: block;}
+
+.container-1200 {
+    width: 1200px;
+    margin: auto;
+    /*background-color: blue;*/
+}
+
+.container-1040 {
+    max-width: 1040px;
+    margin: auto;
+    /*background-color: blue;*/
+}
+
 
 .page-header {
     background: url("img/anastasiya-vysotskaya-v5GfetB7Yv0-unsplash 1.jpg") no-repeat center;
     background-size: cover;
-    min-height: 715px;
+    min-height: 715px;    
 }
 
 
-.header-menu {
-    width: 1200px;
+.header-menu {    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -56,7 +70,8 @@ body {
 }
 
 .header-menu a:hover {
-    text-decoration: underline;
+    color: rgb(134, 43, 0);
+    /*text-decoration: underline;*/
 }
 
 .header-menu a:active {
@@ -73,7 +88,7 @@ body {
 }
 
 .promo {
-    margin: 90px 0 165px 182px;
+    margin: 90px 0 165px 0px;
     width: 535px;
     padding: 0px;
 }
@@ -130,7 +145,7 @@ body {
 }
 
 .numbers-section {
-    display: flex;
+    
     background-color: #8D7370;
     color: white;
     font-family: Montserrat;
@@ -139,8 +154,12 @@ body {
     font-size: 30px;
     line-height: 37px;
     /* identical to box height */
-    text-transform: uppercase;
-    justify-content: space-around;
+    text-transform: uppercase;    
+}
+
+.numbers-section .container-1040 {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     height: 273px;
 }
@@ -157,26 +176,76 @@ body {
     padding-bottom: 65px;
 }
 
-.gallery {
-    width: 1200px;
-    margin: 0 auto;
-    /* background-color: red; */
+.portfolio .section-title {
+    text-align: left;
+}
+
+.gallery {    
+    /*background-color: red; */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: space-between;
 }
-
-.portfolio .section-title {
-    text-align: left;
-    margin-left: 100px;
-}
-
 .project {    
-    /* background-color: red; */
+    /* background-color: red;*/
     margin-bottom: 25px;
-    padding: 0px;  
+    padding: 0px; 
+    display: flex;
+    /*width: 100%;*/
 }
+
+.project-block {
+    margin: 0px;
+    padding: 0px;
+    width: 100%; 
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    /*background-color: red; */
+}
+
+.project-text {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(100, 72, 69, 0.8);   
+    top: 0;
+    left: -100%;
+    transition: all 0.2s ease-out;
+    /*background-color: red; */
+}
+
+.project-text h4 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 86px 109px 0;
+    margin: 0px;
+}
+
+.project-text p {
+    /* Основной текст */
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    /* or 167% */
+    color: #FFFFFF;
+    padding: 35px;
+    margin: 0px;
+}
+
+.project-block:hover .project-text {
+    left: 0;
+}
+
 
 .look-arrow {    
     font-family: Montserrat;
@@ -289,12 +358,14 @@ body {
 .reviews-slider-arrows {
     background: #CC8B86;
     width: 72px;
-    height: 72px;
+    height: 72px;    
     border-radius: 72px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+
 
 .reviews-gallery-photo {
     margin: 0px;
@@ -368,6 +439,7 @@ body {
     font-weight: normal;
     font-size: 18px;
     line-height: 30px;  
+    border: none;
 }
 
 
